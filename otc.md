@@ -84,9 +84,9 @@ API 请求在通过网络传输的过程中极有可能被篡改，为了确保�
 	{
 	    "status": 0,
 	    "data": {
-	    	"cnyPrice":6.93,			// 单个币的价格
+	    	"cnyPrice":6.93,		// 单个币的价格
 	    	"minSell":1.0,			// 最小卖出数量
-	    	"minBuy":1.0,				// 最小买入数量
+	    	"minBuy":1.0,			// 最小买入数量
 	    },	
 	    "message": ""
 	}
@@ -100,13 +100,13 @@ API 请求在通过网络传输的过程中极有可能被篡改，为了确保�
 
 ###### 请求参数
 	{
-		"symbol":"usdt-trc20"					// 币种
-		"time":"1573529660"				// 时间戳
+		"symbol":"usdt-trc20"			// 币种
+		"time":"1573529660"			// 时间戳
 		"apiKey":【API Access Key】		// 申请的API Access Key
-		"amount":1000						// 订单的数量
-		"price":10000.00					// 订单的价格（price与amount二选一）
-		"side":1							// =1,买入;=2,卖出
-		"currency":"CNY"					// 计价货币类型（可选，默认="CNY"）人民币="CNY"，卢比="INR"
+		"amount":1000				// 订单的数量
+		"price":10000.00			// 订单的价格（price与amount二选一）
+		"side":1				// =1,买入;=2,卖出
+		"currency":"CNY"			// 计价货币类型（可选，默认="CNY"）人民币="CNY"，卢比="INR"
 		"sign":"19dd26b4e80df932a02ca7ed52f6b69a"
 	}
 	
@@ -127,14 +127,14 @@ API 请求在通过网络传输的过程中极有可能被篡改，为了确保�
 ###### 请求参数
 	{
 		"amount":100					// 买入/卖出数量
-		"price":1000.00				// 订单金额（price与amount二选一）
-		"symbol":"usdt_trc20"					// 币种
+		"price":1000.00					// 订单金额（price与amount二选一）
+		"symbol":"usdt_trc20"				// 币种
 		"address":"TXMbnzgwy8UZraghZ5eSJ8qqCKjUnQogot"	// 地址
 		"time":"1573529660"				// 时间戳
-		"payType":1						// =1,银行卡;=2,支付宝;=3,微信;=4,UPI；
-		"side":1							// =1,买入;=2,卖出;
-		"apiKey":【API Access Key】		// 申请的API Access Key
-		"currency":"CNY"					// 计价货币类型（可选，默认="CNY"）人民币="CNY"，卢比="INR"
+		"payType":1					// =1,银行卡;=2,支付宝;=3,微信;=4,UPI；
+		"side":1					// =1,买入;=2,卖出;
+		"apiKey":【API Access Key】			// 申请的API Access Key
+		"currency":"CNY"				// 计价货币类型（可选，默认="CNY"）人民币="CNY"，卢比="INR"
 		"sign":"19dd26b4e80df932a02ca7ed52f6b69a"
 	}
 	
@@ -145,12 +145,12 @@ API 请求在通过网络传输的过程中极有可能被篡改，为了确保�
 	    	"amount":100,					// 实际买入/卖出的数量
 	    	"price":1000.00,				// 实际支付的金额
 	    	"tradeNo":"c491dabf7ad96ca33d912c460b761a5c",	// 订单号
-	    	"accountName":"张三",		// 收款人姓名
-	    	"province":"北京",			// 开户行所在省份
-	    	"city":"北京",				// 开户行所在城市
-	    	"branch":"招行朝阳门支行",	// 开户行
-	    	"accountNo":"8888888888888888",	// 账户
-	    	"qrCode":"http://xxx/xxx/xxx.png"	// 二维码连接
+	    	"accountName":"张三",			       // 收款人姓名
+	    	"province":"北京",			       // 开户行所在省份
+	    	"city":"北京",				       // 开户行所在城市
+	    	"branch":"招行朝阳门支行",			    // 开户行
+	    	"accountNo":"8888888888888888",			// 账户
+	    	"qrCode":"http://xxx/xxx/xxx.png"		// 二维码连接
 	    }
 	    "message": ""
 	}
@@ -165,7 +165,7 @@ API 请求在通过网络传输的过程中极有可能被篡改，为了确保�
 ###### 请求参数
 	{
 		"time":"1573529660"				// 时间戳
-		"apiKey":【API Access Key】		// 申请的API Access Key
+		"apiKey":【API Access Key】			// 申请的API Access Key
 		"sign":"19dd26b4e80df932a02ca7ed52f6b69a"
 	}
 	
@@ -186,7 +186,7 @@ API 请求在通过网络传输的过程中极有可能被篡改，为了确保�
 ###### 请求参数
 	{
 		"time":"1573529660"				// 时间戳
-		"apiKey":【API Access Key】		// 申请的API Access Key
+		"apiKey":【API Access Key】			// 申请的API Access Key
 		"sign":"19dd26b4e80df932a02ca7ed52f6b69a"
 	}
 	
@@ -208,7 +208,7 @@ API 请求在通过网络传输的过程中极有可能被篡改，为了确保�
 	{
 		"orderNo":"2df3fd173c2c5ffaf29149bc8b15745b"	// 订单号
 		"time":"1573529660"				// 时间戳
-		"apiKey":【API Access Key】		// 申请的API Access Key
+		"apiKey":【API Access Key】			// 申请的API Access Key
 		"sign":"19dd26b4e80df932a02ca7ed52f6b69a"
 	}
 	
