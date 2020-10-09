@@ -165,6 +165,7 @@ API 请求在通过网络传输的过程中极有可能被篡改，为了确保�
 ###### 请求参数
 	{
 		"time":"1573529660"				// 时间戳
+		"bankRefer":"129304392012"			// 银行流水单号
 		"apiKey":【API Access Key】			// 申请的API Access Key
 		"sign":"19dd26b4e80df932a02ca7ed52f6b69a"
 	}
