@@ -14,6 +14,7 @@
 8 <a href="#8">赎回下单</a>	POST /v1/fund/redeem<br/>
 9 <a href="#9">获取充币地址</a>	GET /v1/chain/address/{symbol}<br/>
 10 <a href="#10">获取资产</a>	GET /v1/chain/account/{token}<br/>
+11 <a href="#11">提币</a>	POST /v1/chain/withdraw<br/>
 
 ### <a name="1">1 用户注册</a>	
 ###### 请求接口
@@ -233,6 +234,28 @@
 	    	"available":"100.0000",				// 可用
 	    	"hold":"100.0000"				// 冻结
 	    }
+	    "message": ""
+	}
+<br/>
+
+### <a name="11">11 提币</a>
+###### 请求接口
+	POST /v1/chain/withdraw
+###### HEADER请求参数
+	{
+		"Authorization":TOKEN				// 用户token
+	}
+###### 请求参数
+	{
+		"currency_id":19					// 币种id，usdt=19
+		"address":"0xB2199C06F617CC252dDB34b9dfb1076F12A3344A"	// 提币地址
+		"size":20.00						// 提币数量
+		"code":"1234"						// 短信验证码
+	}
+###### 返回值
+	{
+	    "status": 0,
+	    "data":
 	    "message": ""
 	}
 <br/>
