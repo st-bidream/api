@@ -13,6 +13,7 @@
 7 <a href="#7">订单列表</a>	GET /v1/fund/orders<br/>
 8 <a href="#8">赎回下单</a>	POST /v1/fund/redeem<br/>
 9 <a href="#9">获取充币地址</a>	GET /v1/chain/address/{symbol}<br/>
+10 <a href="#10">获取资产</a>	GET /v1/chain/account/{token}<br/>
 
 ### <a name="1">1 用户注册</a>	
 ###### 请求接口
@@ -214,3 +215,24 @@
 	}
 <br/>
 
+### <a name="10">10 获取资产</a>
+###### 请求接口
+	GET /v1/chain/account/{token}
+###### HEADER请求参数
+	{
+		"Authorization":TOKEN				// 用户token
+	}
+###### 请求参数
+	{
+		"token":"usdt"					// 币种代码
+	}
+###### 返回值
+	{
+	    "status": 0,
+	    "data":{
+	    	"available":"100.0000",				// 可用
+	    	"hold":"100.0000"				// 冻结
+	    }
+	    "message": ""
+	}
+<br/>
