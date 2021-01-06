@@ -15,6 +15,7 @@
 9 <a href="#9">获取充币地址</a>	GET /v1/chain/address/{symbol}<br/>
 10 <a href="#10">获取资产</a>	GET /v1/chain/account/{token}<br/>
 11 <a href="#11">提币</a>	POST /v1/chain/withdraw<br/>
+12 <a href="#12">获取净值列表</a>	GET /public/v1/fund/{fundId}/npvs<br/>
 
 ### <a name="1">1 用户注册</a>	
 ###### 请求接口
@@ -256,6 +257,28 @@
 	{
 	    "status": 0,
 	    "data":
+	    "message": ""
+	}
+<br/>
+
+### <a name="12">12 获取净值列表</a>
+###### 请求接口
+	GET /public/v1/fund/{fundId}/npvs
+###### 请求参数
+	{
+		"fundId":123					// 基金id
+		"start":10000000				// 起始时间戳，可选，默认三个月数据
+		"end":100000000					// 结束时间戳，可选，默认三个月数据
+	}
+###### 返回值
+	{
+	    "status": 0,
+	    "data":[{
+	    	"npv": 1.0923,					// 基金净值
+	    	"day": "2020-01-01",				// 日期
+	    }
+	    ...
+	    ]
 	    "message": ""
 	}
 <br/>
