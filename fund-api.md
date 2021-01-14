@@ -42,7 +42,7 @@
 	POST /public/v1/users/send-msg
 ###### 请求参数
 	{
-		"behavior":3					// 动作标识，固定=3
+		"behavior":3					// 动作标识，用户注册=3；提币=5；
 		"areacode":"86"					// 地区编码
 		"phone":"13912345678"				// 手机号
 	}
