@@ -8,7 +8,7 @@
 2 <a href="#2">获取短信验证码</a>		POST /public/v1/users/send-msg<br/>
 3 <a href="#3">登录</a>		POST /public/v1/users/sign-in<br/>
 4 <a href="#4">基金列表</a>	GET /public/v1/fund/list<br/>
-5 <a href="#5">基金详情</a>	GET /public/v1/{fundId}/info<br/>
+5 <a href="#5">基金详情</a>	GET /public/v1/fund/{fundId}/info<br/>
 6 <a href="#6">买入下单</a>	POST /v1/fund/order<br/>
 7 <a href="#7">订单列表</a>	GET /v1/fund/orders<br/>
 8 <a href="#8">赎回下单</a>	POST /v1/fund/redeem<br/>
@@ -100,7 +100,7 @@
 
 ### <a name="5">5 基金详情</a>	
 ###### 请求接口
-	GET /public/v1/{fundId}/list
+	GET /public/v1/fund/{fundId}/info
 ###### 请求参数
 	{
 		"fundId":123					// 基金id，请求地址中传入
