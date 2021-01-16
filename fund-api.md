@@ -16,6 +16,7 @@
 10 <a href="#10">获取资产</a>	GET /v1/chain/account/{token}<br/>
 11 <a href="#11">提币</a>	POST /v1/chain/withdraw<br/>
 12 <a href="#12">获取净值列表</a>	GET /public/v1/fund/{fundId}/npvs<br/>
+13 <a href="#13">用户资产估值及明细</a>	GET /public/v1/fund/assets<br/>
 
 ### <a name="1">1 用户注册</a>	
 ###### 请求接口
@@ -279,6 +280,36 @@
 	    }
 	    ...
 	    ]
+	    "message": ""
+	}
+<br/>
+
+### <a name="13">13 用户资产估值及明细</a>
+###### 请求接口
+	GET /public/v1/fund/assets
+###### HEADER请求参数
+	{
+		"Authorization":TOKEN				// 用户token
+	}
+###### 请求参数
+	{
+	}
+###### 返回值
+	{
+	    "status": 0,
+	    "data":{
+	    	"asset": 1000.00,				// 总估值
+	    	"asset_cny": 7000.00,				// 总估值（人民币） 
+	    	"assets": [					// 明细
+	    		{
+	    			"available": 100.00,		// 可用
+	    			"hold":0.00,			// 冻结
+	    			"available_worth":100.00,	// 可用估值（人民币）
+	    			"hold_worth":0.00,		// 冻结估值（人民币）
+	    		}
+	    		...
+	    	]
+	    }
 	    "message": ""
 	}
 <br/>
