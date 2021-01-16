@@ -16,7 +16,7 @@
 10 <a href="#10">获取资产</a>	GET /v1/chain/account/{token}<br/>
 11 <a href="#11">提币</a>	POST /v1/chain/withdraw<br/>
 12 <a href="#12">获取净值列表</a>	GET /public/v1/fund/{fundId}/npvs<br/>
-13 <a href="#13">用户资产估值及明细</a>	GET /public/v1/fund/assets<br/>
+13 <a href="#13">用户资产估值及明细</a>	GET /v1/fund/assets<br/>
 14 <a href="#14">站内信列表</a>	GET /public/v1/fund/msgs<br/>
 15 <a href="#15">站内信详情</a>	GET /public/v1/fund/msg<br/>
 
@@ -288,7 +288,7 @@
 
 ### <a name="13">13 用户资产估值及明细</a>
 ###### 请求接口
-	GET /public/v1/fund/assets
+	GET /v1/fund/assets
 ###### HEADER请求参数
 	{
 		"Authorization":TOKEN				// 用户token
