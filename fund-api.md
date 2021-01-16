@@ -17,6 +17,8 @@
 11 <a href="#11">提币</a>	POST /v1/chain/withdraw<br/>
 12 <a href="#12">获取净值列表</a>	GET /public/v1/fund/{fundId}/npvs<br/>
 13 <a href="#13">用户资产估值及明细</a>	GET /public/v1/fund/assets<br/>
+14 <a href="#14">站内信列表</a>	GET /public/v1/fund/msgs<br/>
+15 <a href="#15">站内信详情</a>	GET /public/v1/fund/msg<br/>
 
 ### <a name="1">1 用户注册</a>	
 ###### 请求接口
@@ -312,4 +314,47 @@
 	    }
 	    "message": ""
 	}
+<br/>
+
+### <a name="14">14 站内信列表</a>
+###### 请求接口
+	GET /public/v1/fund/msgs
+###### 请求参数
+	{
+	}
+###### 返回值
+	{
+	    "status": 0,
+	    "data":[{
+	    	"id": 1,				// id
+	    	"title": "",				// 标题
+	    	"content":"",				// 内容
+	    	"create_time":"2020-01-01"		// 添加日期
+	    }
+	    ...
+	    ]
+	    "message": ""
+	}
+
+<br/>
+
+### <a name="15">15 站内信详情</a>
+###### 请求接口
+	GET /public/v1/fund/msg
+###### 请求参数
+	{
+		"msgId": 1
+	}
+###### 返回值
+	{
+	    "status": 0,
+	    "data":{
+	    	"title": "",				// 标题
+	    	"content":"",				// 内容
+	    	"create_time":"2020-01-01"		// 添加日期
+	    }
+	    ...
+	    "message": ""
+	}
+
 <br/>
