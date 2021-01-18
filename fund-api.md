@@ -20,6 +20,8 @@
 14 <a href="#14">站内信列表</a>	GET /public/v1/fund/msgs<br/>
 15 <a href="#15">站内信详情</a>	GET /public/v1/fund/msg<br/>
 16 <a href="#16">用户资产及收益</a>	GET /v1/fund/{fundId}/profit<br/>
+17 <a href="#17">站内信未读数量</a>	GET /v1/fund/msg/unread<br/>
+18 <a href="#18">站内信标为已读</a>	POST /v1/fund/msg/read<br/>
 
 ### <a name="1">1 用户注册</a>	
 ###### 请求接口
@@ -330,6 +332,7 @@
 	    	"id": 1,				// id
 	    	"title": "",				// 标题
 	    	"content":"",				// 内容
+		"read":0,				// =0,未读；=1,已读（登录后返）
 	    	"create_time":"2020-01-01"		// 添加日期
 	    }
 	    ...
@@ -387,6 +390,45 @@
 		"npv":1.01				// 净值
 	    }
 	    ...
+	    "message": ""
+	}
+
+<br/>
+
+### <a name="17">17 站内信未读数量</a>
+###### 请求接口
+	GET /v1/fund/msg/unread
+###### HEADER请求参数
+	{
+		"Authorization":TOKEN			// 用户token
+	}
+###### 请求参数
+	{
+	}
+###### 返回值
+	{
+	    "status": 0,
+	    "data": 0,					// 未读数量
+	    "message": ""
+	}
+
+<br/>
+
+### <a name="18">18 站内信标为已读</a>
+###### 请求接口
+	POST /v1/fund/msg/read
+###### HEADER请求参数
+	{
+		"Authorization":TOKEN			// 用户token
+	}
+###### 请求参数
+	{
+		"msgId":1				// 站内信id，如把所有都标为已读，传0
+	}
+###### 返回值
+	{
+	    "status": 0,
+	    "data": "",
 	    "message": ""
 	}
 
