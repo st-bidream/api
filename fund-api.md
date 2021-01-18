@@ -17,7 +17,7 @@
 11 <a href="#11">提币</a>	POST /v1/chain/withdraw<br/>
 12 <a href="#12">获取净值列表</a>	GET /public/v1/fund/{fundId}/npvs<br/>
 13 <a href="#13">用户资产估值及明细</a>	GET /v1/fund/assets<br/>
-14 <a href="#14">站内信列表</a>	GET /public/v1/fund/msgs<br/>
+14 <a href="#14">站内信列表</a>	GET /v1/fund/msgs<br/>
 15 <a href="#15">站内信详情</a>	GET /public/v1/fund/msg<br/>
 16 <a href="#16">用户资产及收益</a>	GET /v1/fund/{fundId}/profit<br/>
 17 <a href="#17">站内信未读数量</a>	GET /v1/fund/msg/unread<br/>
@@ -321,7 +321,7 @@
 
 ### <a name="14">14 站内信列表</a>
 ###### 请求接口
-	GET /public/v1/fund/msgs
+	GET /v1/fund/msgs
 ###### 请求参数
 	{
 	}
